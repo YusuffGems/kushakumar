@@ -1,0 +1,21 @@
+# Kusha Kumar NR — UX & Product Designer
+
+> Portfolio of Kusha Kumar NR, a Senior UX & Product Designer (HFI CUA) with 7+ years of experience designing human-centered products across e-learning, ecommerce, healthcare, finance and airlines. Currently at Wipro.
+
+Kusha bridges research, behavior and craft — turning ambiguous problems into intuitive, accessible products. The site covers experience, toolkit, education, selected case studies and contact.
+
+## Pages
+
+- [Home](/): About, experience, toolkit, selected work and contact.
+
+## Projects
+
+- [Airline Booking Kiosk](/projects/airline-booking-kiosk): End-to-end kiosk, mobile and web flows for check-in, booking and live flight tracking (Spekond Technology).
+- [Enterprise SaaS Suite](/projects/enterprise-saas-suite): Multi-product enterprise platform aligning design across finance and SaaS verticals with a shared design system (Wipro).
+- [Pearson Learning Experience](/projects/pearson-learning-experience): Research-led UX improvements with WCAG 2.1 AA accessibility for diverse learners.
+- [Healthcare MVP](/projects/healthcare-mvp): Discovery research, service blueprint and clickable MVP prototype for a healthcare startup.
+
+## Optional
+
+- [Behance profile](https://www.behance.net/kushinr619945f): Full visual case studies and additional work.
+- [LinkedIn](https://shorturl.at/hquwJ): Professional background and recommendations.
