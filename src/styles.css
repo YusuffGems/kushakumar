@@ -1,0 +1,208 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-accent-blue: var(--accent-blue);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-hairline: var(--hairline);
+  --color-muted-ink: var(--muted-ink);
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* LIGHT (default) */
+:root {
+  --radius: 0.875rem;
+  --background: oklch(0.985 0 0);
+  --foreground: oklch(0.14 0.02 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.14 0.02 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.14 0.02 260);
+  --primary: oklch(0.52 0.22 257);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.96 0.005 260);
+  --secondary-foreground: oklch(0.14 0.02 260);
+  --muted: oklch(0.96 0.005 260);
+  --muted-foreground: oklch(0.45 0.01 260);
+  --accent: oklch(0.96 0.005 260);
+  --accent-foreground: oklch(0.14 0.02 260);
+  --destructive: oklch(0.62 0.22 25);
+  --border: oklch(0 0 0 / 8%);
+  --input: oklch(0 0 0 / 10%);
+  --ring: oklch(0.52 0.22 257);
+
+  --accent-blue: oklch(0.52 0.22 257);
+  --surface: oklch(1 0 0);
+  --surface-2: oklch(0.96 0.005 260);
+  --hairline: oklch(0 0 0 / 8%);
+  --muted-ink: oklch(0.45 0.01 260);
+}
+
+/* DARK */
+.dark {
+  --background: oklch(0.06 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.11 0.005 260);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.11 0.005 260);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.62 0.21 257);
+  --primary-foreground: oklch(0.99 0 0);
+  --secondary: oklch(0.16 0.008 260);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.16 0.008 260);
+  --muted-foreground: oklch(0.7 0.01 260);
+  --accent: oklch(0.16 0.008 260);
+  --accent-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.62 0.21 257);
+
+  --accent-blue: oklch(0.62 0.21 257);
+  --surface: oklch(0.11 0.005 260);
+  --surface-2: oklch(0.16 0.008 260);
+  --hairline: oklch(1 0 0 / 8%);
+  --muted-ink: oklch(0.7 0.01 260);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html, body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+    transition: background-color .35s ease, color .35s ease;
+      scroll-behavior: smooth;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent-blue);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Mobile scroll safety: ensure vertical panning is always available
+   and momentum scrolling works on iOS. */
+html, body {
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: none;
+    scroll-behavior: smooth;
+}
+
+@keyframes loaderBarFill {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+@keyframes loaderOut {
+  to { transform: translateY(-100%); }
+}
+@keyframes loaderTextIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* @utility grid-bg {
+  background-image:
+    linear-gradient(to right, currentColor 1px, transparent 1px),
+    linear-gradient(to bottom, currentColor 1px, transparent 1px);
+  background-size: 56px 56px;
+  color: var(--color-hairline);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 30%, transparent 75%);
+} */
+/* WhatsApp Floating Animation */
+
+@keyframes whatsappFloat {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes whatsappPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-btn {
+  animation:
+    whatsappFloat 3s ease-in-out infinite,
+    whatsappPulse 2s infinite;
+
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-tooltip {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+}
+
+.group:hover .whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+} 
