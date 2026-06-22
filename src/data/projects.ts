@@ -81,10 +81,87 @@ export const PROJECTS: Project[] = [
     links: [{ label: "View on Behance", href: BEHANCE }],
   },
   {
-  slug: "Advisorkhoj – Financial Advisory Platform",
-  title: "Advisorkhoj",
-  tag: "Advisorkhoj – Financial Advisory Platform",
-  blurb: "UX Case Study | FinTech / Wealth Management",
+    slug: "Advisorkhoj – Financial Advisory Platform",
+    title: "Advisorkhoj",
+    tag: "Advisorkhoj – Financial Advisory Platform",
+    blurb: "UX Case Study | FinTech / Wealth Management",
+    image: projHealth,
+    gallery: [projHealth, projLearning, projAirline],
+    stack: [
+      "Discovery Research",
+      "Service Blueprint",
+      "Figma",
+      "Prototyping",
+      "Stakeholder Workshops",
+    ],
+    role: "UX Designer",
+    year: "2019 — 2020",
+    overview:
+      "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
+    links: [
+      {
+        label: "View",
+        href: "https://bunch-robin-31308520.figma.site/",
+      },
+    ],
+  },
+  {
+    slug: "ecommerce-application",
+    title: "Ecommerce Application",
+    tag: "Ecommerce Application",
+    blurb: "UI/UX Case Study",
+    image: projHealth,
+    gallery: [projHealth, projLearning, projAirline],
+    stack: [
+      "User Research",
+      "Wireframing",
+      "UI Design",
+      "Figma",
+      "Prototyping",
+    ],
+    role: "UI/UX Designer",
+    year: "2024",
+    overview:
+      "Designed a modern ecommerce platform focused on improving product discovery, seamless checkout, and enhanced user experience across web and mobile devices.",
+    links: [
+      {
+        label: "View",
+        href: noonCaseStudy,
+      },
+    ],
+
+  },
+  {
+    slug: "JOCO Airlines –  Case Study",
+    title: "JOCO Airlines",
+    tag: "JOCO Airlines",
+    blurb: "UX Case Study | FinTech / Wealth Management",
+    image: projHealth,
+    gallery: [projHealth, projLearning, projAirline],
+    stack: [
+      "Discovery Research",
+      "Service Blueprint",
+      "Figma",
+      "Prototyping",
+      "Stakeholder Workshops",
+    ],
+    role: "UX Designer",
+    year: "2019 — 2020",
+    overview:
+      "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
+    links: [
+      {
+        label: "View",
+        href: "https://www.figma.com/proto/sBrwKPjjdnJEIVQhWFBuKz/Casey---UX-Case-Study-Template--Community-?node-id=2846-16701&t=WwS5In4BLXtqzgxU-1&scaling=scale-down-width&content-scaling=fixed&page-id=207%3A1975",
+      },
+      
+    ],
+  },
+  {
+  slug: "traveli-booking-website",
+  title: "Traveli Booking Website",
+  tag: "Traveli Booking Website",
+  blurb: "UI | UX / Travel Booking Platform",
   image: projHealth,
   gallery: [projHealth, projLearning, projAirline],
   stack: [
@@ -97,41 +174,67 @@ export const PROJECTS: Project[] = [
   role: "UX Designer",
   year: "2019 — 2020",
   overview:
-    "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
+    "Designed a travel booking platform focused on seamless flight, hotel, and holiday package reservations. Conducted user research, created wireframes, high-fidelity UI designs, and interactive prototypes in Figma.",
   links: [
     {
-      label: "View",
-      href: "https://bunch-robin-31308520.figma.site/",
+      label: "View Prototype",
+      href: "https://www.figma.com/proto/5dAWRVW9ghyzJpI7hlZTOt/Booking-Website?node-id=0-6534&t=X14bWxtTvQXWfS9r-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=0%3A8831",
+      
     },
   ],
 },
 {
-  slug: "ecommerce-application",
-  title: "Ecommerce Application",
-  tag: "Ecommerce Application",
-  blurb: "UI/UX Case Study",
+  slug: "Special Studens learning application",
+  title: "Special Studens learning application",
+  tag: "Special Studens learning application",
+  blurb: "UI | UX / Travel Booking Platform",
   image: projHealth,
   gallery: [projHealth, projLearning, projAirline],
   stack: [
-    "User Research",
-    "Wireframing",
-    "UI Design",
+    "Discovery Research",
+    "Service Blueprint",
     "Figma",
     "Prototyping",
+    "Stakeholder Workshops",
   ],
-  role: "UI/UX Designer",
-  year: "2024",
+  role: "UX Designer",
+  year: "2019 — 2020",
   overview:
-    "Designed a modern ecommerce platform focused on improving product discovery, seamless checkout, and enhanced user experience across web and mobile devices.",
+    "Designed a travel booking platform focused on seamless flight, hotel, and holiday package reservations. Conducted user research, created wireframes, high-fidelity UI designs, and interactive prototypes in Figma.",
   links: [
+    {
+      label: "View Prototype",
+      href: "https://drums-best-17582408.figma.site/student/learning",
+      
+    },
+  ],
+},
 {
-label: "View",
-href: noonCaseStudy,
-},
-],
-
-},
-
+  slug: "E-Learning Web application",
+  title: "E-Learning Web application",
+  tag: "E-Learning Web application",
+  blurb: "UI | UX / Travel Booking Platform",
+  image: projHealth,
+  gallery: [projHealth, projLearning, projAirline],
+  stack: [
+    "Discovery Research",
+    "Service Blueprint",
+    "Figma",
+    "Prototyping",
+    "Stakeholder Workshops",
+  ],
+  role: "UX Designer",
+  year: "2019 — 2020",
+  overview:
+    "Designed a travel booking platform focused on seamless flight, hotel, and holiday package reservations. Conducted user research, created wireframes, high-fidelity UI designs, and interactive prototypes in Figma.",
+  links: [
+    {
+      label: "View Prototype",
+      href: "https://xd.adobe.com/view/ab482d9d-7e86-44e4-b28c-3fbc3244357b-fe1b/screen/0bc803d5-070c-4fdb-aed0-19825fd3a966",
+      
+    },
+  ],
+}
 
 
 ];
