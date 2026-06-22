@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Kusha Kumar NR — UX & Product Designer" },
-      { name: "description", content: "UX and Product Designer (HFI CUA) with 7+ years of experience designing human-centered products across e-learning, ecommerce, healthcare, finance and airlines." },
+      { name: "description", content: "UX and Product Designer (HFI CUA) with 8+ years of experience designing human-centered products across e-learning, ecommerce, healthcare, finance and airlines." },
       { property: "og:title", content: "Kusha Kumar NR — UX & Product Designer" },
       { property: "og:description", content: "Senior UX/UI Designer crafting intuitive, accessible products. Currently at Wipro." },
       { property: "og:url", content: "https://kushakumar.lovable.app/" },
@@ -87,7 +87,7 @@ function Portfolio() {
 
           <ScrollReveal delay={220}>
             <p className="text-base sm:text-lg text-muted-ink max-w-2xl mx-auto leading-relaxed">
-              A collaborative User Experience Designer with <span className="text-foreground">7+ years</span> bridging research, behavior and craft.
+              A collaborative User Experience Designer with <span className="text-foreground">8+ years</span> bridging research, behavior and craft.
               I turn ambiguous problems into intuitive products across e-learning, ecommerce, healthcare, finance and airlines.
             </p>
           </ScrollReveal>
@@ -117,7 +117,7 @@ function Portfolio() {
             </p>
           </div>
           <div className="rounded-2xl border border-hairline bg-surface p-6 space-y-4">
-            <Stat k="7+ yrs" v="Designing products" />
+            <Stat k="8+ yrs" v="Designing products" />
             <Stat k="5 industries" v="E-learning, Ecommerce, Healthcare, Finance, Airlines" />
             <Stat k="HFI CUA" v="Certified Usability Analyst, 2023" />
           </div>

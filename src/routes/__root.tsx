@@ -16,7 +16,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 const SITE_URL = "https://kushakumar.lovable.app";
 const SITE_TITLE = "Kusha Kumar NR — UX & Product Designer";
 const SITE_DESC =
-  "Portfolio of Kusha Kumar NR — Senior UX/Product Designer with 7+ years across e-learning, ecommerce, healthcare, finance and airlines.";
+  "Portfolio of Kusha Kumar NR — Senior UX/Product Designer with 8+ years across e-learning, ecommerce, healthcare, finance and airlines.";
 
 function NotFoundComponent() {
   return (

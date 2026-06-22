@@ -80,6 +80,32 @@ export const PROJECTS: Project[] = [
       "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
     links: [{ label: "View on Behance", href: BEHANCE }],
   },
+  {
+  slug: "Advisorkhoj – Financial Advisory Platform",
+  title: "Advisorkhoj",
+  tag: "Advisorkhoj – Financial Advisory Platform",
+  blurb: "UX Case Study | FinTech / Wealth Management",
+  image: projHealth,
+  gallery: [projHealth, projLearning, projAirline],
+  stack: [
+    "Discovery Research",
+    "Service Blueprint",
+    "Figma",
+    "Prototyping",
+    "Stakeholder Workshops",
+  ],
+  role: "UX Designer",
+  year: "2019 — 2020",
+  overview:
+    "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
+  links: [
+    {
+      label: "View",
+      href: "https://bunch-robin-31308520.figma.site/",
+    },
+  ],
+}
+
 ];
 
 export const getProject = (slug: string) => PROJECTS.find((p) => p.slug === slug);
