@@ -2,7 +2,7 @@ import projSaas from "@/assets/proj-saas.jpg";
 import projAirline from "@/assets/proj-airline.jpg";
 import projLearning from "@/assets/proj-learning.jpg";
 import projHealth from "@/assets/proj-health.jpg";
-
+import noonCaseStudy from "@/assets/Noon case study.pdf";
 export type Project = {
   slug: string;
   title: string;
@@ -104,7 +104,35 @@ export const PROJECTS: Project[] = [
       href: "https://bunch-robin-31308520.figma.site/",
     },
   ],
-}
+},
+{
+  slug: "ecommerce-application",
+  title: "Ecommerce Application",
+  tag: "Ecommerce Application",
+  blurb: "UI/UX Case Study",
+  image: projHealth,
+  gallery: [projHealth, projLearning, projAirline],
+  stack: [
+    "User Research",
+    "Wireframing",
+    "UI Design",
+    "Figma",
+    "Prototyping",
+  ],
+  role: "UI/UX Designer",
+  year: "2024",
+  overview:
+    "Designed a modern ecommerce platform focused on improving product discovery, seamless checkout, and enhanced user experience across web and mobile devices.",
+  links: [
+{
+label: "View",
+href: noonCaseStudy,
+},
+],
+
+},
+
+
 
 ];
 
