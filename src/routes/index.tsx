@@ -170,19 +170,33 @@ function Portfolio() {
       </Section>
 
       {/* PROJECTS */}
-      <Section id="projects" eyebrow="Selected work" title="Projects you need to see.">
-        <ScrollReveal>
-          <p className="text-muted-ink -mt-6 mb-10 max-w-xl">
-            For NDA compliance, deeper case studies are available on request. Curious?{" "}
-            <a href="mailto:Kushnr192@gmail.com" className="text-accent-blue underline-offset-4 hover:underline">Drop me a line</a>.
-          </p>
-        </ScrollReveal>
-        <Stagger className="grid md:grid-cols-2 gap-5" step={100} y={28}>
-          {PROJECTS.map((p) => (
-            <ProjectCard key={p.slug} slug={p.slug} title={p.title} tag={p.tag} blurb={p.blurb} image={p.image} />
-          ))}
-        </Stagger>
-      </Section>
+     <Section id="projects" eyebrow="Selected work" title="Projects you need to see.">
+  <ScrollReveal>
+    <p className="text-muted-ink -mt-6 mb-10 max-w-xl">
+      For NDA compliance, deeper case studies are available on request. Curious?{" "}
+      <a href="mailto:Kushnr192@gmail.com" className="text-accent-blue underline-offset-4 hover:underline">Drop me a line</a>.
+    </p>
+  </ScrollReveal>
+
+  {/* First 7 — Projects */}
+  <Stagger className="grid md:grid-cols-2 gap-5" step={100} y={28}>
+    {PROJECTS.slice(0, 7).map((p) => (
+      <ProjectCard key={p.slug} slug={p.slug} title={p.title} tag={p.tag} blurb={p.blurb} image={p.image} />
+    ))}
+  </Stagger>
+
+  {/* Case Study heading */}
+  <ScrollReveal>
+    <h3 className="mt-16 mb-8 text-2xl font-semibold tracking-tight">Case Study</h3>
+  </ScrollReveal>
+
+  {/* The balance — Case Studies */}
+  <Stagger className="grid md:grid-cols-2 gap-5" step={100} y={28}>
+    {PROJECTS.slice(7).map((p) => (
+      <ProjectCard key={p.slug} slug={p.slug} title={p.title} tag={p.tag} blurb={p.blurb} image={p.image} />
+    ))}
+  </Stagger>
+</Section>
 
       {/* EDUCATION */}
       <Section id="education" eyebrow="Education & Certificates" title="Where I learned.">

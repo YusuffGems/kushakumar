@@ -2,7 +2,13 @@ import projSaas from "@/assets/proj-saas.jpg";
 import projAirline from "@/assets/proj-airline.jpg";
 import projLearning from "@/assets/proj-learning.jpg";
 import projHealth from "@/assets/proj-health.jpg";
+import Traveli from "@/assets/travell.png";
+import noon from "@/assets/noon.jpeg";
+import Digisite from "@/assets/Digisite Construction..jpeg";
+import Joco from "@/assets/Joco.jpeg";
 import noonCaseStudy from "@/assets/Noon case study.pdf";
+
+
 export type Project = {
   slug: string;
   title: string;
@@ -80,89 +86,12 @@ export const PROJECTS: Project[] = [
       "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
     links: [{ label: "View on Behance", href: BEHANCE }],
   },
-  {
-    slug: "Advisorkhoj – Financial Advisory Platform",
-    title: "Advisorkhoj",
-    tag: "Advisorkhoj – Financial Advisory Platform",
-    blurb: "UX Case Study | FinTech / Wealth Management",
-    image: projHealth,
-    gallery: [projHealth, projLearning, projAirline],
-    stack: [
-      "Discovery Research",
-      "Service Blueprint",
-      "Figma",
-      "Prototyping",
-      "Stakeholder Workshops",
-    ],
-    role: "UX Designer",
-    year: "2019 — 2020",
-    overview:
-      "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
-    links: [
-      {
-        label: "View",
-        href: "https://bunch-robin-31308520.figma.site/",
-      },
-    ],
-  },
-  {
-    slug: "ecommerce-application",
-    title: "Ecommerce Application",
-    tag: "Ecommerce Application",
-    blurb: "UI/UX Case Study",
-    image: projHealth,
-    gallery: [projHealth, projLearning, projAirline],
-    stack: [
-      "User Research",
-      "Wireframing",
-      "UI Design",
-      "Figma",
-      "Prototyping",
-    ],
-    role: "UI/UX Designer",
-    year: "2024",
-    overview:
-      "Designed a modern ecommerce platform focused on improving product discovery, seamless checkout, and enhanced user experience across web and mobile devices.",
-    links: [
-      {
-        label: "View",
-        href: noonCaseStudy,
-      },
-    ],
-
-  },
-  {
-    slug: "JOCO Airlines –  Case Study",
-    title: "JOCO Airlines",
-    tag: "JOCO Airlines",
-    blurb: "UX Case Study | FinTech / Wealth Management",
-    image: projHealth,
-    gallery: [projHealth, projLearning, projAirline],
-    stack: [
-      "Discovery Research",
-      "Service Blueprint",
-      "Figma",
-      "Prototyping",
-      "Stakeholder Workshops",
-    ],
-    role: "UX Designer",
-    year: "2019 — 2020",
-    overview:
-      "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
-    links: [
-      {
-        label: "View",
-        href: "https://www.figma.com/proto/sBrwKPjjdnJEIVQhWFBuKz/Casey---UX-Case-Study-Template--Community-?node-id=2846-16701&t=WwS5In4BLXtqzgxU-1&scaling=scale-down-width&content-scaling=fixed&page-id=207%3A1975",
-      },
-      
-    ],
-  },
-  {
+   {
   slug: "traveli-booking-website",
   title: "Traveli Booking Website",
   tag: "Traveli Booking Website",
   blurb: "UI | UX / Travel Booking Platform",
-  image: projHealth,
+  image: Traveli,
   gallery: [projHealth, projLearning, projAirline],
   stack: [
     "Discovery Research",
@@ -234,7 +163,110 @@ export const PROJECTS: Project[] = [
       
     },
   ],
-}
+},
+  {
+    slug: "Digisite Construction",
+    title: "Construction",
+    tag: "Digisite Construction",
+    blurb: "UX Case Study | FinTech / Wealth Management",
+    image: Digisite,
+    gallery: [projHealth, projLearning, projAirline],
+    stack: [
+      "Discovery Research",
+      "Service Blueprint",
+      "Figma",
+      "Prototyping",
+      "Stakeholder Workshops",
+    ],
+    role: "UX Designer",
+    year: "2019 — 2020",
+    overview:
+      "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
+    links: [
+      {
+        label: "View",
+        href: "https://www.figma.com/proto/87YX5yu9GswvJuQHpjaDaq/Grafft?node-id=1-100&t=XlttebBME2cxktF1-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
+      },
+    ],
+  },
+  {
+    slug: "Advisorkhoj – Financial Advisory Platform",
+    title: "Advisorkhoj",
+    tag: "Advisorkhoj – Financial Advisory Platform",
+    blurb: "UX Case Study | FinTech / Wealth Management",
+    image: projHealth,
+    gallery: [projHealth, projLearning, projAirline],
+    stack: [
+      "Discovery Research",
+      "Service Blueprint",
+      "Figma",
+      "Prototyping",
+      "Stakeholder Workshops",
+    ],
+    role: "UX Designer",
+    year: "2019 — 2020",
+    overview:
+      "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
+    links: [
+      {
+        label: "View",
+        href: "https://bunch-robin-31308520.figma.site/",
+      },
+    ],
+  },
+  {
+    slug: "ecommerce-application",
+    title: "Ecommerce Application",
+    tag: "Ecommerce Application",
+    blurb: "UI/UX Case Study",
+    image: noon,
+    gallery: [projHealth, projLearning, projAirline],
+    stack: [
+      "User Research",
+      "Wireframing",
+      "UI Design",
+      "Figma",
+      "Prototyping",
+    ],
+    role: "UI/UX Designer",
+    year: "2024",
+    overview:
+      "Designed a modern ecommerce platform focused on improving product discovery, seamless checkout, and enhanced user experience across web and mobile devices.",
+    links: [
+      {
+        label: "View",
+        href: noonCaseStudy,
+      },
+    ],
+
+  },
+  {
+    slug: "JOCO Airlines –  Case Study",
+    title: "JOCO Airlines",
+    tag: "JOCO Airlines",
+    blurb: "UX Case Study | FinTech / Wealth Management",
+    image: Joco,
+    gallery: [projHealth, projLearning, projAirline],
+    stack: [
+      "Discovery Research",
+      "Service Blueprint",
+      "Figma",
+      "Prototyping",
+      "Stakeholder Workshops",
+    ],
+    role: "UX Designer",
+    year: "2019 — 2020",
+    overview:
+      "Translated provider and patient research into a focused MVP scope. Delivered a clickable prototype and a service blueprint that informed the founders' go/no-go decision.",
+    links: [
+      {
+        label: "View",
+        href: "https://www.figma.com/proto/sBrwKPjjdnJEIVQhWFBuKz/Casey---UX-Case-Study-Template--Community-?node-id=2846-16701&t=WwS5In4BLXtqzgxU-1&scaling=scale-down-width&content-scaling=fixed&page-id=207%3A1975",
+      },
+      
+    ],
+  },
+ 
 
 
 ];
